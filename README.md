@@ -1,683 +1,208 @@
-## Seccion1
+## LABORATORIOS DE PYTHON
 
-## LAB 1 - Trabajando con la función `print()`
+# Sección 1 – Función print()
 
-### 🎯 Objetivo
+## LAB 1: Trabajando con print()
 
-Aprender el uso básico de la función `print()` y comprender errores comunes en Python.
+Se utilizó la función print() para mostrar mensajes en pantalla.
 
----
+Qué hace el código:
+Imprime "¡Hola, Mundo!"
+Imprime el nombre del usuario
+Se probaron errores comunes
 
-### ✅ Paso 1: Imprimir "¡Hola, Mundo!"
+Conclusiones:
+Sin comillas → error de sintaxis (SyntaxError)
+Sin paréntesis → error porque print es una función
+Se pueden usar comillas simples o dobles
+Se pueden usar varios print() en una misma línea
 
-Código:
+## LAB 2: Argumentos de print()
 
-```python
-print("¡Hola, Mundo!")
-```
+Uso de argumentos sep y end para modificar la salida.
 
-Resultado esperado:
-
-¡Hola, Mundo!
-
----
-
-### ✅ Paso 2: Imprimir mi nombre
-
-Código:
-
-```python
-print("Tatiana")
-```
-
-📌 Resultado esperado:
-
-```
-Tatiana
-```
-
----
-
-### ⚠️ Paso 3: Eliminar comillas
-
-Código probado:
-
-```python
-print(¡Hola, Mundo!)
-```
-
-❌ Resultado:
-
-Se genera un error de tipo:
-
-```
-SyntaxError
-```
-
-📌 Explicación:
-Python interpreta el texto sin comillas como código, no como texto, por lo que produce un error de sintaxis.
-
----
-
-### ⚠️ Paso 4: Eliminar paréntesis
-
-Código probado:
-
-```python
-print "Hola"
-```
-
-❌ Resultado:
-
-```
-SyntaxError
-```
-
-📌 Explicación:
-En Python 3, la función `print()` requiere paréntesis obligatoriamente.
-
----
-
-### 🧪 Paso 5: Experimentos realizados
-
-#### ✔ Uso de comillas simples
-
-```python
-print('Hola Mundo')
-```
-
-✔ Funciona correctamente.
-
----
-
-#### ✔ Múltiples prints en una línea
-
-```python
-print("Linea 1"); print("Linea 2")
-```
-
-📌 Resultado:
-
-```
-Linea 1
-Linea 2
-```
-
----
-
-#### ✔ Prints en diferentes líneas
-
-```python
-print("Linea 1")
-print("Linea 2")
-```
-
-📌 Resultado:
-
-```
-Linea 1
-Linea 2
-```
-
----
-
-### 🧠 Conclusiones
-
-* La función `print()` permite mostrar información en pantalla.
-* Las cadenas deben ir entre comillas.
-* Los paréntesis son obligatorios en Python 3.
-* Python es sensible a errores de sintaxis.
-* Se pueden usar comillas simples o dobles.
-* Cada `print()` genera una nueva línea por defecto.
-
-
-
-## LAB 2 - La función `print()` y sus argumentos
-
-### 🎯 Objetivo
-
-Aprender a usar los argumentos `sep` y `end` para modificar la salida de la función `print()`.
-
----
-
-### 📌 Enunciado
-
-Modificar la primera línea de código usando `sep` y `end` para obtener la siguiente salida:
-
-```
-Programming***Essentials***in...Python
-```
-
----
-
-### ✅ Solución
-
-Código utilizado:
-
-```python
-print("Programming", "Essentials", "in", sep="***", end="...")
-print("Python")
-```
-
----
-
-### 🔍 Explicación paso a paso
-
-#### ✔ Uso de `sep`
-
-* `sep` significa **separador**
-* Reemplaza el espacio por defecto entre los argumentos
-
-Ejemplo:
-
-```python
-print("A", "B", "C", sep="-")
-```
+Qué hace el código:
+sep="***" separa palabras con ***
+end="..." evita salto de línea y agrega ...
 
 Resultado:
+Programming***Essentials***in...Python
 
-```
-A-B-C
-```
+## LAB 3: Formato de salida
 
----
+Se trabajó con saltos de línea (\n) y repetición de cadenas.
 
-#### ✔ Uso de `end`
+Qué hace el código:
+Dibuja una figura (flecha) con print()
+Usa \n para evitar múltiples prints
+Duplica figuras vertical y horizontalmente
 
-* `end` define qué se imprime al final
-* Por defecto es un salto de línea (`\n`)
+Conclusiones:
+\n permite controlar saltos de línea
+Se pueden multiplicar cadenas (* 2)
+Python es sensible a mayúsculas (print ≠ Print)
 
-Ejemplo:
+# Sección 2 – Cadenas
 
-```python
-print("Hola", end="...")
-print("Mundo")
-```
+## LAB: Literales de Python
+
+Uso de caracteres de escape en cadenas.
+
+Qué hace el código:
+Usa \" para imprimir comillas dentro del texto
 
 Resultado:
-
-```
-Hola...Mundo
-```
-
----
-
-### 🧪 Resultado final del laboratorio
-
-```
-Programming***Essentials***in...Python
-```
-
----
-
-### 🧠 Conclusiones
-
-* `sep` permite cambiar el separador entre datos
-* `end` permite controlar cómo termina la impresión
-* Se pueden combinar ambos argumentos en una sola función
-* `print()` es flexible y configurable
-
-
-## LAB 3 - Dando formato a la salida
-
-### 🎯 Objetivo
-
-Aprender a dar formato a la salida usando:
-
-* Saltos de línea (`\n`)
-* Multiplicación de cadenas
-* Uso eficiente de `print()`
-
----
-
-### 📌 Enunciado
-
-Modificar el código para:
-
-* Reducir el número de `print()`
-* Usar `\n`
-* Duplicar la figura
-* Crear una figura más grande
-
----
-
-### ✅ Paso 1: Flecha original
-
-Código:
-
-```python
-print("    *")
-print("   * *")
-print("  *   *")
-print(" *     *")
-print("***   ***")
-print("  *   *")
-print("  *   *")
-print("  *****")
-```
-
----
-
-### ✅ Paso 2: Usar `\n` para reducir prints
-
-Código:
-
-```python
-print("    *\n   * *\n  *   *\n *     *\n***   ***\n  *   *\n  *   *\n  *****")
-```
-
-📌 Explicación:
-El `\n` permite hacer saltos de línea dentro de un solo `print()`.
-
----
-
-### ✅ Paso 3: Duplicar la flecha (vertical)
-
-Código:
-
-```python
-print(("    *\n   * *\n  *   *\n *     *\n***   ***\n  *   *\n  *   *\n  *****\n") * 2)
-```
-
-📌 Explicación:
-Multiplicar una cadena (`* 2`) repite su contenido.
-
----
-
-### ✅ Paso 4: Duplicar la flecha (horizontal)
-
-Código:
-
-```python
-print("    *    " * 2)
-print("   * *   " * 2)
-print("  *   *  " * 2)
-print(" *     * " * 2)
-print("***   ***" * 2)
-print("  *   *  " * 2)
-print("  *   *  " * 2)
-print("  *****  " * 2)
-```
-
-📌 Explicación:
-Se repite cada línea para mostrar dos figuras lado a lado.
-
----
-
-### 🧪 Resultado
-
-Se obtiene:
-
-* Una flecha original
-* Una flecha duplicada verticalmente
-* Dos flechas en paralelo
-
----
-
-### ⚠️ Pruebas de error realizadas
-
-* Eliminar comillas → `SyntaxError`
-* Cambiar `print` por `Print` → `NameError`
-* Eliminar paréntesis → `SyntaxError`
-
----
-
-### 🧠 Conclusiones
-
-* `\n` permite optimizar el código
-* Las cadenas se pueden multiplicar
-* Python es sensible a mayúsculas y minúsculas
-* Los errores ayudan a entender la sintaxis
-
-## seccion2
-
-## LAB - Literales de Python (Cadenas)
-
-### 🎯 Objetivo
-
-Aprender a usar:
-
-* Cadenas
-* Caracteres de escape (`\`)
-* Manejo de comillas dentro de texto
-
----
-
-### 📌 Enunciado
-
-Crear una línea de código que imprima exactamente:
-
-```text
 "Estoy"""aprendiendo"""""Python"""
-```
 
----
+Conclusión:
+Los caracteres de escape permiten mostrar símbolos especiales
 
-### ✅ Solución
+# Sección 3 – Operadores
 
-Código utilizado:
+## Ejercicios de operadores
 
-```python
-print("\"Estoy\"\"\"aprendiendo\"\"\"\"\"Python\"\"\"")
-```
+Se resolvieron expresiones matemáticas aplicando prioridad de operadores.
 
----
+Regla clave:
 
-### 🔍 Explicación paso a paso
+Paréntesis
+Potencias
+Multiplicación y división
+Suma y resta
 
-#### ✔ ¿Por qué usamos `\`?
+Ejercicios resueltos
 
-El carácter `\` (barra invertida) es un **carácter de escape**.
+Regla general:
+Python sigue la jerarquía de operaciones:
 
-Sirve para indicar que el siguiente carácter **no tiene su significado normal**.
+Paréntesis
+Potencias **
+Multiplicación, división, módulo * / %
+Suma y resta + -
 
----
+Ejercicio 1:
+Expresión: 5 + 3 * 2
+Resultado: 11
+Explicación: Primero 3*2=6, luego 5+6=11.
 
-#### ✔ Uso de `\"`
+Ejercicio 2:
+Expresión: 8 / 2 + 4 * 3
+Resultado: 16.0
+Explicación: 8/2=4 y 4*3=12, luego 4+12=16.
 
-```python
-\" 
-```
+Ejercicio 3:
+Expresión: (7 + 3) * 2 - 5
+Resultado: 15
+Explicación: (7+3)=10, 10*2=20, 20-5=15.
 
-Significa:
+Ejercicio 4:
+Expresión: 10 - 4 + 2 * 3
+Resultado: 12
+Explicación: 2*3=6, luego 10-4+6=12.
 
-👉 imprimir una comilla (`"`) sin cerrar la cadena.
+Ejercicio 5:
+Expresión: (10 / 2) * (3 + 2) - 4
+Resultado: 21.0
+Explicación: 10/2=5, (3+2)=5, 5*5=25, 25-4=21.
 
----
+Ejercicio 6:
+Expresión: 2 + 3 * (4 - 1)
+Resultado: 11
+Explicación: (4-1)=3, 3*3=9, 2+9=11.
 
-#### ✔ Construcción de la cadena
+Ejercicio 7:
+Expresión: 5 * 2 ** 3
+Resultado: 40
+Explicación: 2³=8, 5*8=40.
 
-Para imprimir:
+Ejercicio 8:
+Expresión: 6 + 4 / 2 ** 2
+Resultado: 7.0
+Explicación: 2²=4, 4/4=1, 6+1=7.
 
-```text
-"Estoy"""aprendiendo"""""Python"""
-```
+Ejercicio 9:
+Expresión: 10 % 3 + 2 * 5
+Resultado: 11
+Explicación: 10%3=1, 2*5=10, 1+10=11.
 
-Se hace así:
+Ejercicio 10:
+Expresión: (8 + 2) * 3 ** 2
+Resultado: 90
+Explicación: (8+2)=10, 3²=9, 10*9=90.
 
-* Cada comilla interna → `\"`
-* Se repiten según la cantidad necesaria
+Ejercicio 11:
+Expresión: 7 + 2 * (3 + 5) / 4
+Resultado: 11.0
+Explicación: (3+5)=8, 2*8=16, 16/4=4, 7+4=11.
+
+Ejercicio 12:
+Expresión: 2 ** 3 * 4 / 2
+Resultado: 16.0
+Explicación: 2³=8, 8*4=32, 32/2=16.
+
+Ejercicio 13:
+Expresión: 9 - 6 + 3 ** 2
+Resultado: 12
+Explicación: 3²=9, 9-6+9=12.
+
+Ejercicio 14:
+Expresión: (7 - 2) * 5 + 3 ** 2
+Resultado: 34
+Explicación: (7-2)=5, 5*5=25, 3²=9, 25+9=34.
+
+Ejercicio 15:
+Expresión: 4 * 2 ** 3 / 8 + 1
+Resultado: 5.0
+Explicación: 2³=8, 4*8=32, 32/8=4, 4+1=5.
+
+# Sección 4 – Variables
+
+## LAB: Convertidor de unidades
+
+Conversión entre millas y kilómetros.
+
+Qué hace el código:
+Usa variables para almacenar valores
+Realiza conversiones matemáticas
+Usa round() para redondear
+
+Fórmulas:
+Millas → km: millas * 1.61
+Km → millas: km / 1.61
+
+Conclusión:
+round() permite controlar decimales
+print() puede combinar texto y variables
+
+## LAB: Expresiones algebraicas
+
+Evaluación de una expresión matemática.
+
+Expresión:
+3x³ - 2x² + 3x - 1
+
+Qué hace el código:
+Convierte x a tipo float
+Calcula el resultado usando operadores
+
+Conclusión:
+En Python se debe escribir la multiplicación explícitamente (*)
+Se usan potencias con **
+
+## LAB: Algoritmos básicos
+
+Se desarrollaron algoritmos usando entradas del usuario (input()).
+
+Qué hace el código:
+Calcula valores como:
+Puntaje total
+Tiempo en segundos
+Daño total
 
 Ejemplo:
-
-```python
-\"\"\"   →   """
-```
-
----
-
-### 🧪 Resultado
-
-```text
-"Estoy"""aprendiendo"""""Python"""
-```
-
----
-
-### ⚠️ Errores comunes
-
-#### ❌ No usar escape
-
-```python
-print(""Estoy"")
-```
-
-Error:
-
-```text
-SyntaxError
-```
-
-📌 Porque Python confunde las comillas de apertura y cierre.
-
----
-
-### 🧠 Conclusiones
-
-* Las cadenas deben estar correctamente delimitadas
-* El carácter `\` permite incluir símbolos especiales
-* Python es estricto con las comillas
-* Los literales de tipo cadena representan texto directamente
-
-## seccion3
-
-# Ejercicios de Operadores Matemáticos
-
----
-
-## Ejercicio 1
-
-Expresión:
-
-```python
-5 + 3 * 2
-```
-
-Resultado: **11**
-
-Explicación:
-Primero se multiplica (3 * 2 = 6), luego se suma (5 + 6 = 11).
-
----
-
-## Ejercicio 2
-
-Expresión:
-
-```python
-8 / 2 + 4 * 3
-```
-
-Resultado: **16.0**
-
-Explicación:
-8 / 2 = 4.0
-4 * 3 = 12
-4.0 + 12 = 16.0
-
----
-
-## Ejercicio 3
-
-```python
-(7 + 3) * 2 - 5
-```
-
-Resultado: **15**
-
-Explicación:
-(7 + 3) = 10
-10 * 2 = 20
-20 - 5 = 15
-
----
-
-## Ejercicio 4
-
-```python
-10 - 4 + 2 * 3
-```
-
-Resultado: **12**
-
-Explicación:
-2 * 3 = 6
-10 - 4 = 6
-6 + 6 = 12
-
----
-
-## Ejercicio 5
-
-```python
-(10 / 2) * (3 + 2) - 4
-```
-
-Resultado: **21.0**
-
-Explicación:
-10 / 2 = 5.0
-3 + 2 = 5
-5.0 * 5 = 25.0
-25.0 - 4 = 21.0
-
----
-
-## Ejercicio 6
-
-```python
-2 + 3 * (4 - 1)
-```
-
-Resultado: **11**
-
-Explicación:
-4 - 1 = 3
-3 * 3 = 9
-2 + 9 = 11
-
----
-
-## Ejercicio 7
-
-```python
-5 * 2 ** 3
-```
-
-Resultado: **40**
-
-Explicación:
-2 ** 3 = 8
-5 * 8 = 40
-
----
-
-## Ejercicio 8
-
-```python
-6 + 4 / 2 ** 2
-```
-
-Resultado: **7.0**
-
-Explicación:
-2 ** 2 = 4
-4 / 4 = 1.0
-6 + 1.0 = 7.0
-
----
-
-## Ejercicio 9
-
-```python
-10 % 3 + 2 * 5
-```
-
-Resultado: **11**
-
-Explicación:
-10 % 3 = 1
-2 * 5 = 10
-1 + 10 = 11
-
----
-
-## Ejercicio 10
-
-```python
-(8 + 2) * 3 ** 2
-```
-
-Resultado: **90**
-
-Explicación:
-8 + 2 = 10
-3 ** 2 = 9
-10 * 9 = 90
-
----
-
-## Ejercicio 11
-
-```python
-7 + 2 * (3 + 5) / 4
-```
-
-Resultado: **11.0**
-
-Explicación:
-3 + 5 = 8
-2 * 8 = 16
-16 / 4 = 4.0
-7 + 4.0 = 11.0
-
----
-
-## Ejercicio 12
-
-```python
-2 ** 3 * 4 / 2
-```
-
-Resultado: **16.0**
-
-Explicación:
-2 ** 3 = 8
-8 * 4 = 32
-32 / 2 = 16.0
-
----
-
-## Ejercicio 13
-
-```python
-9 - 6 + 3 ** 2
-```
-
-Resultado: **12**
-
-Explicación:
-3 ** 2 = 9
-9 - 6 = 3
-3 + 9 = 12
-
----
-
-## Ejercicio 14
-
-```python
-(7 - 2) * 5 + 3 ** 2
-```
-
-Resultado: **34**
-
-Explicación:
-7 - 2 = 5
-5 * 5 = 25
-3 ** 2 = 9
-25 + 9 = 34
-
----
-
-## Ejercicio 15
-
-```python
-4 * 2 ** 3 / 8 + 1
-```
-
-Resultado: **5.0**
-
-Explicación:
-2 ** 3 = 8
-4 * 8 = 32
-32 / 8 = 4.0
-4.0 + 1 = 5.0
-
----
-
-## 🧠 Conclusiones
-
-* La jerarquía de operadores es fundamental
-* Primero paréntesis, luego potencias, multiplicación/división, y por último suma/resta
-* La división (`/`) siempre devuelve flotantes
-* Python respeta las reglas matemáticas
+total = nivel1 + nivel2 + nivel3
+
+Conclusión:
+input() permite interacción con el usuario
+Se deben convertir datos (int) para operar
+Los algoritmos siguen estructura: entrada → proceso → salida
