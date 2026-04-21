@@ -1,3 +1,5 @@
+## Seccion1
+
 ## LAB 1 - Trabajando con la función `print()`
 
 ### 🎯 Objetivo
@@ -127,3 +129,92 @@ Linea 2
 * Python es sensible a errores de sintaxis.
 * Se pueden usar comillas simples o dobles.
 * Cada `print()` genera una nueva línea por defecto.
+
+
+
+## 🧪 LAB 2 - La función `print()` y sus argumentos
+
+### 🎯 Objetivo
+
+Aprender a usar los argumentos `sep` y `end` para modificar la salida de la función `print()`.
+
+---
+
+### 📌 Enunciado
+
+Modificar la primera línea de código usando `sep` y `end` para obtener la siguiente salida:
+
+```
+Programming***Essentials***in...Python
+```
+
+---
+
+### ✅ Solución
+
+Código utilizado:
+
+```python
+print("Programming", "Essentials", "in", sep="***", end="...")
+print("Python")
+```
+
+---
+
+### 🔍 Explicación paso a paso
+
+#### ✔ Uso de `sep`
+
+* `sep` significa **separador**
+* Reemplaza el espacio por defecto entre los argumentos
+
+Ejemplo:
+
+```python
+print("A", "B", "C", sep="-")
+```
+
+Resultado:
+
+```
+A-B-C
+```
+
+---
+
+#### ✔ Uso de `end`
+
+* `end` define qué se imprime al final
+* Por defecto es un salto de línea (`\n`)
+
+Ejemplo:
+
+```python
+print("Hola", end="...")
+print("Mundo")
+```
+
+Resultado:
+
+```
+Hola...Mundo
+```
+
+---
+
+### 🧪 Resultado final del laboratorio
+
+```
+Programming***Essentials***in...Python
+```
+
+---
+
+### 🧠 Conclusiones
+
+* `sep` permite cambiar el separador entre datos
+* `end` permite controlar cómo termina la impresión
+* Se pueden combinar ambos argumentos en una sola función
+* `print()` es flexible y configurable
+
+
