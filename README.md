@@ -438,3 +438,246 @@ SyntaxError
 * El carácter `\` permite incluir símbolos especiales
 * Python es estricto con las comillas
 * Los literales de tipo cadena representan texto directamente
+
+## seccion3
+
+# Ejercicios de Operadores Matemáticos
+
+---
+
+## Ejercicio 1
+
+Expresión:
+
+```python
+5 + 3 * 2
+```
+
+Resultado: **11**
+
+Explicación:
+Primero se multiplica (3 * 2 = 6), luego se suma (5 + 6 = 11).
+
+---
+
+## Ejercicio 2
+
+Expresión:
+
+```python
+8 / 2 + 4 * 3
+```
+
+Resultado: **16.0**
+
+Explicación:
+8 / 2 = 4.0
+4 * 3 = 12
+4.0 + 12 = 16.0
+
+---
+
+## Ejercicio 3
+
+```python
+(7 + 3) * 2 - 5
+```
+
+Resultado: **15**
+
+Explicación:
+(7 + 3) = 10
+10 * 2 = 20
+20 - 5 = 15
+
+---
+
+## Ejercicio 4
+
+```python
+10 - 4 + 2 * 3
+```
+
+Resultado: **12**
+
+Explicación:
+2 * 3 = 6
+10 - 4 = 6
+6 + 6 = 12
+
+---
+
+## Ejercicio 5
+
+```python
+(10 / 2) * (3 + 2) - 4
+```
+
+Resultado: **21.0**
+
+Explicación:
+10 / 2 = 5.0
+3 + 2 = 5
+5.0 * 5 = 25.0
+25.0 - 4 = 21.0
+
+---
+
+## Ejercicio 6
+
+```python
+2 + 3 * (4 - 1)
+```
+
+Resultado: **11**
+
+Explicación:
+4 - 1 = 3
+3 * 3 = 9
+2 + 9 = 11
+
+---
+
+## Ejercicio 7
+
+```python
+5 * 2 ** 3
+```
+
+Resultado: **40**
+
+Explicación:
+2 ** 3 = 8
+5 * 8 = 40
+
+---
+
+## Ejercicio 8
+
+```python
+6 + 4 / 2 ** 2
+```
+
+Resultado: **7.0**
+
+Explicación:
+2 ** 2 = 4
+4 / 4 = 1.0
+6 + 1.0 = 7.0
+
+---
+
+## Ejercicio 9
+
+```python
+10 % 3 + 2 * 5
+```
+
+Resultado: **11**
+
+Explicación:
+10 % 3 = 1
+2 * 5 = 10
+1 + 10 = 11
+
+---
+
+## Ejercicio 10
+
+```python
+(8 + 2) * 3 ** 2
+```
+
+Resultado: **90**
+
+Explicación:
+8 + 2 = 10
+3 ** 2 = 9
+10 * 9 = 90
+
+---
+
+## Ejercicio 11
+
+```python
+7 + 2 * (3 + 5) / 4
+```
+
+Resultado: **11.0**
+
+Explicación:
+3 + 5 = 8
+2 * 8 = 16
+16 / 4 = 4.0
+7 + 4.0 = 11.0
+
+---
+
+## Ejercicio 12
+
+```python
+2 ** 3 * 4 / 2
+```
+
+Resultado: **16.0**
+
+Explicación:
+2 ** 3 = 8
+8 * 4 = 32
+32 / 2 = 16.0
+
+---
+
+## Ejercicio 13
+
+```python
+9 - 6 + 3 ** 2
+```
+
+Resultado: **12**
+
+Explicación:
+3 ** 2 = 9
+9 - 6 = 3
+3 + 9 = 12
+
+---
+
+## Ejercicio 14
+
+```python
+(7 - 2) * 5 + 3 ** 2
+```
+
+Resultado: **34**
+
+Explicación:
+7 - 2 = 5
+5 * 5 = 25
+3 ** 2 = 9
+25 + 9 = 34
+
+---
+
+## Ejercicio 15
+
+```python
+4 * 2 ** 3 / 8 + 1
+```
+
+Resultado: **5.0**
+
+Explicación:
+2 ** 3 = 8
+4 * 8 = 32
+32 / 8 = 4.0
+4.0 + 1 = 5.0
+
+---
+
+## 🧠 Conclusiones
+
+* La jerarquía de operadores es fundamental
+* Primero paréntesis, luego potencias, multiplicación/división, y por último suma/resta
+* La división (`/`) siempre devuelve flotantes
+* Python respeta las reglas matemáticas
