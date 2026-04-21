@@ -132,7 +132,7 @@ Linea 2
 
 
 
-## 🧪 LAB 2 - La función `print()` y sus argumentos
+## LAB 2 - La función `print()` y sus argumentos
 
 ### 🎯 Objetivo
 
@@ -218,3 +218,113 @@ Programming***Essentials***in...Python
 * `print()` es flexible y configurable
 
 
+## LAB 3 - Dando formato a la salida
+
+### 🎯 Objetivo
+
+Aprender a dar formato a la salida usando:
+
+* Saltos de línea (`\n`)
+* Multiplicación de cadenas
+* Uso eficiente de `print()`
+
+---
+
+### 📌 Enunciado
+
+Modificar el código para:
+
+* Reducir el número de `print()`
+* Usar `\n`
+* Duplicar la figura
+* Crear una figura más grande
+
+---
+
+### ✅ Paso 1: Flecha original
+
+Código:
+
+```python
+print("    *")
+print("   * *")
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+```
+
+---
+
+### ✅ Paso 2: Usar `\n` para reducir prints
+
+Código:
+
+```python
+print("    *\n   * *\n  *   *\n *     *\n***   ***\n  *   *\n  *   *\n  *****")
+```
+
+📌 Explicación:
+El `\n` permite hacer saltos de línea dentro de un solo `print()`.
+
+---
+
+### ✅ Paso 3: Duplicar la flecha (vertical)
+
+Código:
+
+```python
+print(("    *\n   * *\n  *   *\n *     *\n***   ***\n  *   *\n  *   *\n  *****\n") * 2)
+```
+
+📌 Explicación:
+Multiplicar una cadena (`* 2`) repite su contenido.
+
+---
+
+### ✅ Paso 4: Duplicar la flecha (horizontal)
+
+Código:
+
+```python
+print("    *    " * 2)
+print("   * *   " * 2)
+print("  *   *  " * 2)
+print(" *     * " * 2)
+print("***   ***" * 2)
+print("  *   *  " * 2)
+print("  *   *  " * 2)
+print("  *****  " * 2)
+```
+
+📌 Explicación:
+Se repite cada línea para mostrar dos figuras lado a lado.
+
+---
+
+### 🧪 Resultado
+
+Se obtiene:
+
+* Una flecha original
+* Una flecha duplicada verticalmente
+* Dos flechas en paralelo
+
+---
+
+### ⚠️ Pruebas de error realizadas
+
+* Eliminar comillas → `SyntaxError`
+* Cambiar `print` por `Print` → `NameError`
+* Eliminar paréntesis → `SyntaxError`
+
+---
+
+### 🧠 Conclusiones
+
+* `\n` permite optimizar el código
+* Las cadenas se pueden multiplicar
+* Python es sensible a mayúsculas y minúsculas
+* Los errores ayudan a entender la sintaxis
