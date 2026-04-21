@@ -328,3 +328,113 @@ Se obtiene:
 * Las cadenas se pueden multiplicar
 * Python es sensible a mayúsculas y minúsculas
 * Los errores ayudan a entender la sintaxis
+
+## seccion2
+
+## LAB - Literales de Python (Cadenas)
+
+### 🎯 Objetivo
+
+Aprender a usar:
+
+* Cadenas
+* Caracteres de escape (`\`)
+* Manejo de comillas dentro de texto
+
+---
+
+### 📌 Enunciado
+
+Crear una línea de código que imprima exactamente:
+
+```text
+"Estoy"""aprendiendo"""""Python"""
+```
+
+---
+
+### ✅ Solución
+
+Código utilizado:
+
+```python
+print("\"Estoy\"\"\"aprendiendo\"\"\"\"\"Python\"\"\"")
+```
+
+---
+
+### 🔍 Explicación paso a paso
+
+#### ✔ ¿Por qué usamos `\`?
+
+El carácter `\` (barra invertida) es un **carácter de escape**.
+
+Sirve para indicar que el siguiente carácter **no tiene su significado normal**.
+
+---
+
+#### ✔ Uso de `\"`
+
+```python
+\" 
+```
+
+Significa:
+
+👉 imprimir una comilla (`"`) sin cerrar la cadena.
+
+---
+
+#### ✔ Construcción de la cadena
+
+Para imprimir:
+
+```text
+"Estoy"""aprendiendo"""""Python"""
+```
+
+Se hace así:
+
+* Cada comilla interna → `\"`
+* Se repiten según la cantidad necesaria
+
+Ejemplo:
+
+```python
+\"\"\"   →   """
+```
+
+---
+
+### 🧪 Resultado
+
+```text
+"Estoy"""aprendiendo"""""Python"""
+```
+
+---
+
+### ⚠️ Errores comunes
+
+#### ❌ No usar escape
+
+```python
+print(""Estoy"")
+```
+
+Error:
+
+```text
+SyntaxError
+```
+
+📌 Porque Python confunde las comillas de apertura y cierre.
+
+---
+
+### 🧠 Conclusiones
+
+* Las cadenas deben estar correctamente delimitadas
+* El carácter `\` permite incluir símbolos especiales
+* Python es estricto con las comillas
+* Los literales de tipo cadena representan texto directamente
